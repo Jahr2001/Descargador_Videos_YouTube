@@ -18,7 +18,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         self.setWindowTitle('Descargador de videos - Programación Concurrente - 193245 - 193213 .:: Version 1.0 ::.')
         #self.botonSalir.setIcon(QIcon('add.png'))       
         self.botonSalir.clicked.connect(self.salir)
-        self.botonAgregar.clicked.connect(self.dirActual)
+        self.botonAgregar.clicked.connect(self.obtenerUrl)
         
     def obtenerUrl(self):
         urlVideo = self.url.text()
@@ -29,9 +29,9 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         dir = os.getcwd()
         print(dir)
     
-    def dir(self):
-        ed = QFileDialog.getExistingDirectory(self)
-        print(ed)
+def dir(self):
+    ed = QFileDialog.getExistingDirectory(self)
+    print(ed)
     
     def salir(self):
         self.close()

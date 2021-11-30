@@ -37,9 +37,9 @@ color: rgb(255, 255, 255);</string>
    <widget class="QLineEdit" name="url">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>190</x>
       <y>80</y>
-      <width>571</width>
+      <width>451</width>
       <height>31</height>
      </rect>
     </property>
@@ -60,7 +60,7 @@ background-color: rgb(255, 255, 255);</string>
      <rect>
       <x>10</x>
       <y>79</y>
-      <width>61</width>
+      <width>181</width>
       <height>31</height>
      </rect>
     </property>
@@ -69,7 +69,7 @@ background-color: rgb(255, 255, 255);</string>
 font: 75 20pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
-     <string>URL:</string>
+     <string>URL del video:</string>
     </property>
    </widget>
    <widget class="QPushButton" name="botonSalir">
@@ -117,9 +117,9 @@ background-color: rgb(52, 51, 50);</string>
    <widget class="QPushButton" name="botonAgregar">
     <property name="geometry">
      <rect>
-      <x>650</x>
+      <x>640</x>
       <y>80</y>
-      <width>141</width>
+      <width>151</width>
       <height>31</height>
      </rect>
     </property>
@@ -134,6 +134,99 @@ background-color: rgb(52, 51, 50);</string>
     <property name="text">
      <string>Agregar</string>
     </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 75 20pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Guardar en:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="botonCambiarRuta">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>120</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(52, 51, 50);</string>
+    </property>
+    <property name="text">
+     <string>Cambiar directorio</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="rutaGuardar">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>121</y>
+      <width>451</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 255);</string>
+    </property>
+    <property name="placeholderText">
+     <string>Ruta a guardar el video</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>180</y>
+      <width>761</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Titulo</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Author</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Nombre Canal</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Progreso</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Tiempo</string>
+     </property>
+    </column>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
