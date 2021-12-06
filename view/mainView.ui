@@ -176,9 +176,9 @@ background-color: rgb(52, 51, 50);</string>
    <widget class="QComboBox" name="rutaGuardar">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>160</x>
       <y>121</y>
-      <width>451</width>
+      <width>481</width>
       <height>31</height>
      </rect>
     </property>
@@ -199,7 +199,7 @@ color: rgb(0, 0, 255);</string>
       <x>20</x>
       <y>180</y>
       <width>761</width>
-      <height>331</height>
+      <height>301</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -209,27 +209,63 @@ color: rgb(0, 0, 255);</string>
      <property name="text">
       <string>Titulo</string>
      </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Author</string>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
      </property>
     </column>
     <column>
      <property name="text">
       <string>Nombre Canal</string>
      </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Progreso</string>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>Tiempo</string>
+      <string>URL Canal</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
      </property>
     </column>
+    <column>
+     <property name="text">
+      <string>Tiempo de duración del Video</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignJustify|AlignVCenter</set>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>URL VIDEO</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="datosVideos">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>490</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(52, 51, 50);</string>
+    </property>
+    <property name="text">
+     <string>Mostrar Datos De Los Videos Descargados</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
